@@ -18,14 +18,19 @@
     </header>
     <section id="app">
       <ul>
-        <li v-for="friend in friends" :key="friend.id">
+        <!-- Removed because not we have components below -->
+        <!-- <li v-for="friend in friends" :key="friend.id">
           <h2>{{ friend.name }}</h2>
           <button @click='showDetails'>{{ isDetailsVisible ? 'Hide' : 'Show'}}  Details</button>
           <ul v-if='isDetailsVisible'>
             <li><strong>Phone:</strong> {{ friend.phone }}</li>
             <li><strong>Email:</strong> {{ friend.email }}</li>
           </ul>
-        </li>
+        </li> -->
+
+        <!-- Friend-Contact component -->
+        <friend-contact></friend-contact>
+        <friend-contact></friend-contact>
       </ul>
     </section>
   </body>
